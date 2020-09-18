@@ -4,8 +4,11 @@
 nic dla znaczników
 */
 
+*{
+    margin: 0;
+    padding: 0;
+}
 body {
-    width: 90%;
     margin-left: auto;
     margin-right: auto;
     background-color: #429032;
@@ -16,6 +19,7 @@ body {
 
 header {
     background-color: #fafa50;
+    width: 100%;
     text-align: center;
     font-size: 30px;
     font-weight: bold;
