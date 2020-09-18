@@ -19,6 +19,9 @@ section{
 #Title{
     font-size: 40vh;
 }
+#Title sup{
+    font-size: 25vh;
+}
 
 section p{
     font-size: 4vh;
