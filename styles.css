@@ -12,10 +12,17 @@ nic dla znaczników
 section{
     background-image: url("images/jungle.jpg");
     height: 100vh;
+    color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 #Title{
-    font-family: 'Roboto', sans-serif;
-    color: white;
     font-size: 40vh;
+}
+
+section p{
+    font-size: 4vh;
+    position: absolute;
+    right: 5vw;
+    bottom: 10vh;
 }
