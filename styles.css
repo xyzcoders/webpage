@@ -1,0 +1,43 @@
+/*
+. dla klas
+# dla id
+nic dla znaczników
+*/
+
+body {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #429032;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: black;
+}
+
+header {
+    background-color: #fafa50;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    border: 3px black solid;
+}
+
+footer {
+    margin-top: 95%;
+    margin-bottom: 0;
+    background-color: #ffa500;
+    height: 50px;
+    text-align: center;
+}
+
+#title {
+    color: #383838;
+    margin: auto;
+    padding: 30px;
+}
+
+#info {
+    color: #383838;
+    margin: auto;
+    padding: 10px;
+}
