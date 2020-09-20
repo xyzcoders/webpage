@@ -4,40 +4,28 @@
 nic dla znaczników
 */
 
-body {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #429032;
-    font-size: 14px;
-    font-family: sans-serif;
-    color: black;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-header {
-    background-color: #fafa50;
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    border: 3px black solid;
+section{
+    background-image: url("images/jungle.jpg");
+    height: 100vh;
+    color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
-footer {
-    margin-top: 95%;
-    margin-bottom: 0;
-    background-color: #ffa500;
-    height: 50px;
-    text-align: center;
+#Title{
+    font-size: 40vh;
+}
+#Title sup{
+    font-size: 25vh;
 }
 
-#title {
-    color: #383838;
-    margin: auto;
-    padding: 30px;
-}
-
-#info {
-    color: #383838;
-    margin: auto;
-    padding: 10px;
+section p{
+    font-size: 4vh;
+    position: absolute;
+    right: 5vw;
+    bottom: 10vh;
 }
