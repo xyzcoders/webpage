@@ -4,28 +4,99 @@
 nic dla znaczników
 */
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-section{
-    background-image: url("images/jungle.jpg");
-    height: 100vh;
-    color: white;
+/* HEADER CSS */
+header{
+    width: 100vw;
+    height: 110px;
+    padding: 10px;
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(78, 78, 78, 0.925);
+    transition: background-color linear 0.2s;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+header:hover{
+    background-color: rgb(58, 57, 57);
+}
+header #logo{
+    width: 46%;
+}
+header #logo img{
+    height: 100px;
+    margin-left: 50px;
+}
+header nav{
+    width: 50%;
+    padding: 10px;
+}
+header nav ul{
+    display: inline;
+    float: right;
+    font-size: 40px;
     font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: white ;
+}
+header nav ul li{
+    float: left;
+    list-style-type: none;
+    margin: 20px;
 }
 
-#Title{
-    font-size: 40vh;
+header nav ul li img{
+    height: 50px;
+    filter: invert();
 }
-#Title sup{
-    font-size: 25vh;
+/* SECTION CSS */
+section {
+  background-image: url("images/jungle1.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-section p{
-    font-size: 4vh;
-    position: absolute;
-    right: 5vw;
-    bottom: 10vh;
+#Title h1 {
+  text-align: center;  
+  font-size: 160px;
+}
+
+#Title h1 sup{
+    font-size: 80px;
+}
+
+#Title  p {
+  font-size: 40px;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    #Title h1{
+        font-size: 80px;
+    }
+    #Title h1 sup{
+        font-size: 20px;
+    }
+    #Title p{
+        font-size:20px ;
+    }
+    header{
+        height: 75px;
+    }
+    header #logo img{
+        height: 70px;
+    }
 }
