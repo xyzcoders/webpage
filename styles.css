@@ -11,6 +11,7 @@ nic dla znaczników
 body{
     font-family: 'Roboto', sans-serif;
     height: 100vh;
+    line-height: 1.6;
 }
 
 /* HEADER CSS */
@@ -67,32 +68,33 @@ section {
   font-family: "Roboto", sans-serif;
   overflow: hidden;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-#Title h1 {
+section#Home h1 {
   text-align: center;  
   font-size: 160px;
 }
 
-#Title h1 sup{
+section#Home h1 sup{
     font-size: 80px;
 }
 
-#Title  p {
+section#Home p {
   font-size: 40px;
   text-align: center;
 }
 
 @media screen and (max-width: 800px) {
-    #Title h1{
+    #Home h1{
         font-size: 80px;
     }
-    #Title h1 sup{
+    #Home h1 sup{
         font-size: 20px;
     }
-    #Title p{
+    #Home p{
         font-size:20px ;
     }
     header{
