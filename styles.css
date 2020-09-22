@@ -8,19 +8,32 @@ nic dla znaczników
   margin: 0;
   padding: 0;
 }
+body{
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    line-height: 1.6;
+    overflow: hidden;
+}
+
+#container{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
 
 /* HEADER CSS */
 header{
-    width: 100vw;
-    height: 110px;
+    width: 100%;
+    height: 60px;
     padding: 10px;
+    box-sizing: border-box;
     position: fixed;
     z-index: 1;
     background-color: rgba(78, 78, 78, 0.925);
     transition: background-color linear 0.2s;
     display: flex;
     flex-direction: row;
-    overflow: hidden;
 }
 
 header:hover{
@@ -30,67 +43,75 @@ header #logo{
     width: 46%;
 }
 header #logo img{
-    height: 100px;
+    height: 40px;
     margin-left: 50px;
 }
 header nav{
     width: 50%;
-    padding: 10px;
 }
 header nav ul{
-    display: inline;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
     float: right;
-    font-size: 40px;
-    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
     font-weight: 300;
-    color: white ;
+    color: white;
 }
 header nav ul li{
+    margin-left: 20px;
+    margin-right: 20px;
     float: left;
     list-style-type: none;
-    margin: 20px;
 }
 
 header nav ul li img{
-    height: 50px;
+    margin-top: 5px;
+    height: 30px;
     filter: invert();
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }
 /* SECTION CSS */
 section {
   background-image: url("images/jungle1.jpg");
   background-size: cover;
-  width: 100vw;
   height: 100vh;
   color: white;
   font-family: "Roboto", sans-serif;
-  overflow: hidden;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-#Title h1 {
+section#Home h1 {
   text-align: center;  
   font-size: 160px;
+  transition: 2s ease-in;
 }
 
-#Title h1 sup{
+section#Home h1 sup{
     font-size: 80px;
 }
 
-#Title  p {
+section#Home p {
   font-size: 40px;
   text-align: center;
 }
 
 @media screen and (max-width: 800px) {
-    #Title h1{
+    #Home h1{
         font-size: 80px;
     }
-    #Title h1 sup{
+    #Home h1 sup{
         font-size: 20px;
     }
-    #Title p{
+    #Home p{
         font-size:20px ;
     }
     header{

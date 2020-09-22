@@ -2,7 +2,7 @@
 
 <!-- Czuj się swobodnie edytując sobie kod tej strony -->
 
-<html lang="pl">
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <title>Monkey Lab Studio</title>
@@ -10,22 +10,32 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
         <link rel="icon" href="./images/monkelogo.svg">
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     </head>
-    <header>
-        <div id="logo"><img src="./images/monkelogo.svg"></div>
-        <nav>
-            <ul type="">
-                <li>About</li>
-                <li>Projects</li>
-                <li><img src="./images/github.svg" alt="ew"></li>
-            </ul>
-        </nav>
-    </header>
-        <section>
-            <div id="Title">
+    <div id="container">
+        <header>
+            <div id="logo"><img src="./images/monkelogo.svg"></div>
+            <nav>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><img src="./images/github.svg" alt="ew"></li>
+                </ul>
+            </nav>
+        </header>
+            <section id="Home">
+                    <h1> MONKEY LAB<sup>STUDIO</sup></h1>
+                    <p>Bunch of students writing monke code and learning</p>
+            </section>
+            <section id="About">
                 <h1> MONKEY LAB<sup>STUDIO</sup></h1>
                 <p>Bunch of students writing monke code and learning</p>
-            </div>
-        </section>
+            </section>
+            <section id="Projects">
+                <h1> MONKEY LAB<sup>STUDIO</sup></h1>
+                <p>Bunch of students writing monke code and learning</p>
+            </section>
+    </div>
     </body>
 </html>
