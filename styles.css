@@ -8,81 +8,93 @@ nic dla znaczników
   margin: 0;
   padding: 0;
 }
-body{
-    font-family: 'Roboto', sans-serif;
-    height: 100vh;
-    line-height: 1.6;
-    overflow: hidden;
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  line-height: 1.6;
+  overflow: hidden;
 }
 
-#container{
-    width: 100%;
-    height: 100%;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
+#container {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
 /* HEADER CSS */
-header{
-    width: 100%;
-    height: 60px;
-    padding: 10px;
-    box-sizing: border-box;
-    position: fixed;
-    z-index: 1;
-    background-color: rgba(78, 78, 78, 0.925);
-    transition: background-color linear 0.2s;
-    display: flex;
-    flex-direction: row;
+header {
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 1;
+  transition: background-color linear 0.2s;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
 }
 
-header:hover{
-    background-color: rgb(58, 57, 57);
+header:hover {
+  background-color: rgb(58, 57, 57);
 }
-header #logo{
-    width: 46%;
+header #logo {
+  width: 46%;
 }
-header #logo img{
-    height: 40px;
-    margin-left: 50px;
+header #logo img {
+  height: 40px;
+  margin-left: 50px;
 }
-header nav{
-    width: 50%;
+header nav {
+  width: 50%;
 }
-header nav ul{
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: center;
-    float: right;
-    font-size: 25px;
-    font-weight: 300;
-    color: white;
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  float: right;
+  font-size: 25px;
+  font-weight: 300;
+  color: white;
 }
-header nav ul li{
-    margin-left: 20px;
-    margin-right: 20px;
-    float: left;
-    list-style-type: none;
-}
-
-header nav ul li img{
-    margin-top: 5px;
-    height: 30px;
-    filter: invert();
+header nav ul li {
+  margin-left: 20px;
+  margin-right: 20px;
+  float: left;
+  list-style-type: none;
+  transition: transform 0.2s linear;
 }
 
-a{
-    text-decoration: none;
-    color: white;
+header nav ul li img {
+  margin-top: 5px;
+  height: 30px;
+  filter: invert();
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+li:hover{
+  transform: scale(1.2);
 }
 /* SECTION CSS */
 section {
+  height: 100vh;
+  padding: 30px;
+  box-sizing: border-box;
+  scroll-snap-align: center;
+  color: white;
+}
+
+/* HOME SECTION CSS */
+section#Home {
   background-image: url("images/jungle1.jpg");
   background-size: cover;
-  height: 100vh;
-  color: white;
-  font-family: "Roboto", sans-serif;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -90,34 +102,84 @@ section {
 }
 
 section#Home h1 {
-  text-align: center;  
+  text-align: center;
   font-size: 160px;
-  transition: 2s ease-in;
+  animation: fadeIn ease 3s, slideInTitle ease 2s;
 }
 
-section#Home h1 sup{
-    font-size: 80px;
+section#Home h1 sup {
+  font-size: 80px;
 }
 
 section#Home p {
   font-size: 40px;
   text-align: center;
+  animation: fadeIn ease 3s, slideInTitle ease 2s;
+}
+/* ABOUT SECTION CSS */
+
+section#About {
+  width: 100%;
+  background-color: #758757;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  word-wrap: break-word;
 }
 
-@media screen and (max-width: 800px) {
-    #Home h1{
-        font-size: 80px;
-    }
-    #Home h1 sup{
-        font-size: 20px;
-    }
-    #Home p{
-        font-size:20px ;
-    }
-    header{
-        height: 75px;
-    }
-    header #logo img{
-        height: 70px;
-    }
+section#About h1{
+  font-size: 8vw;
+  letter-spacing: 1.5px;
+}
+
+section#About p{
+  font-size: 1.5vw;
+  text-align: center;
+  font-weight: 100;
+}
+
+/* PROJECTS SECTION CSS */
+
+section#Projects{
+  background-color: #5d7189;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+section#Projects h1{
+  font-size: 8vw;
+}
+section#Projects p{
+  font-size: 5vh;
+}
+/*@media screen and (max-width: 800px) {
+  #Home h1 {
+    font-size: 80px;
+  }
+  #Home h1 sup {
+    font-size: 20px;
+  }
+  #Home p {
+    font-size: 20px;
+  }
+  header {
+    height: 75px;
+  }
+  header #logo img {
+    height: 70px;
+  }
+}*/
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes slideInTitle{
+  from{
+    transform: translateY(40px);
+  }
 }
