@@ -31,7 +31,6 @@ header {
   box-sizing: border-box;
   position: fixed;
   z-index: 1;
-  background-color: rgba(78, 78, 78, 0.925);
   transition: background-color linear 0.2s;
   display: flex;
   flex-direction: row;
@@ -85,7 +84,10 @@ li:hover{
 /* SECTION CSS */
 section {
   height: 100vh;
+  padding: 30px;
+  box-sizing: border-box;
   scroll-snap-align: center;
+  color: white;
 }
 
 /* HOME SECTION CSS */
@@ -93,7 +95,6 @@ section#Home {
   background-image: url("images/jungle1.jpg");
   background-size: cover;
   background-attachment: fixed;
-  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -118,11 +119,39 @@ section#Home p {
 /* ABOUT SECTION CSS */
 
 section#About {
-  background-color: rgba(56, 114, 59, 0.925);
+  width: 100%;
+  background-color: #758757;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  text-align: center;
+  word-wrap: break-word;
 }
 
+section#About h1{
+  font-size: 8vw;
+  letter-spacing: 1.5px;
+}
+
+section#About p{
+  font-size: 1.5vw;
+  text-align: center;
+  font-weight: 100;
+}
+
+/* PROJECTS SECTION CSS */
+
+section#Projects{
+  background-color: #5d7189;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+section#Projects h1{
+  font-size: 8vw;
+}
+section#Projects p{
+  font-size: 5vh;
+}
 /*@media screen and (max-width: 800px) {
   #Home h1 {
     font-size: 80px;
