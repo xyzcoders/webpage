@@ -46,6 +46,7 @@ header {
   display: flex;
   flex-direction: row;
   overflow: hidden;
+  animation: slideInHeader 0.8s ease-in, fadeIn 1s ease-in;
 }
 
 header:hover {
@@ -189,5 +190,10 @@ section#Projects p{
 @keyframes slideInTitle{
   from{
     transform: translateY(40px);
+  }
+}
+@keyframes slideInHeader{
+  from{
+    transform: translateY(-50px);
   }
 }
