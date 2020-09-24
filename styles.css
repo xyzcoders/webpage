@@ -134,20 +134,27 @@ section#About {
   width: 100%;
   background-color: #758757;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   text-align: center;
-  word-wrap: break-word;
+  align-content: center;
 }
 
 section#About h1{
-  font-size: 8vw;
+  margin-top: 30vh;
+  margin-left: 5vw;
+  font-size: 10vw;
   letter-spacing: 1.5px;
 }
-
-section#About p{
-  font-size: 1.5vw;
-  text-align: center;
-  font-weight: 100;
+section#About #textContainer{
+  width: 40%;
+  height: 30%;
+  margin-left: 200px;
+  margin-top: 20vh;
+  
+}
+section#About #textContainer p{
+  font-size: 2vw;
+  text-align: justify;
 }
 
 /* PROJECTS SECTION CSS */
@@ -159,14 +166,28 @@ section#Projects{
   text-align: center;
 }
 section#Projects h1{
-  font-size: 8vw;
-}
-section#Projects p{
-  font-size: 5vh;
+  font-size: 15vh;
 }
 @media screen and (max-width: 700px) {
   header{
     width: 100%;
+  }
+  ::-webkit-scrollbar{
+    width: 2px;
+  }
+  header #logo img{
+    margin-left: 1px;
+    margin-top: 5px;
+    height: 35px;
+    width: 35px;
+  }
+  header nav ul li{
+    font-size: 20px;
+    margin: 5px;
+  }
+  header nav ul li img{
+    width: 25px;
+    height: 25px;
   }
   section#Home h1{
     font-size: 80px;
